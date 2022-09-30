@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion House-Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="Hero">
+        <div class="Form-box">
+            <div class="button-box"> 
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Signup</button>
+            </div>
+        
+        <div class="social-icons">
+            <img src="34.jfif">
+            <img src="43.jpg">
+            <img src="download.jfif">
+        </div>
+        <form  id="Login" name="form1" action="login.php" method="post" class = "input-group">
+            
+            <input type="text" class="input-field" name="username" placeholder="user Id" required>
+            <input type="password" class="input-field" name="Password" placeholder="Enter Password" required>
+            <br/>
+            <br/>
+            &nbsp;&nbsp;<input type="checkbox" class="check-box" name="rempassword"><span>Remember Password</span>
+            <br/>
+            
+            &nbsp;<button type="submit" class="submit-btn" onclick="" >Log In</button>
+
+        </form>
+        <form id ="signup" name="form2" action="connect.php" method="post" class = "input-group" >
+            <input type="text" class="input-field" name="username" placeholder="user Id" required>
+            <input type="text" class="input-field" name="email" placeholder="e-mail Id" required>
+            <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+            <input type="password" class="input-field" name="password2" placeholder="Re-Enter Password" required>
+            <br/>
+            <br/>
+            &nbsp;&nbsp;<input type="checkbox" class="check-box"><span>I agree to all the terms and conditions</span>
+            <br/>
+            &nbsp;<button type="submit" class="submit-btn">Sign Up</button>
+
+        </form>
+    </div>
+
+
+    </div>
+    <script>
+        
+        var x =document.getElementById("Login");
+        var y =document.getElementById("signup");
+        var z =document.getElementById("btn");
+
+        function signup(){
+            x.style.left ="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left ="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+        
+    </script>
+    <!--<script>
+        function linkhome(){
+            document.location.href="web.html";
+        }
+    </script>-->
+
+</body>
+</html>
